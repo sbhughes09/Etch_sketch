@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+    </div>
+        <script>
+            const container = document.querySelector('.container');
+               
+            const boxes = (16*16);
+                for(i=0; i<boxes; i++) {
+                    const squareDiv = document.createElement('div');
+                    squareDiv.classList.add("square-box");
+                        container.appendChild(squareDiv);
+                    }
+
+            let hover = document.querySelector(".square-box");
+  
+            hover.addEventListener("mouseover", event);
+            
+            function event (e) {   
+                e.target.classList.toggle('.hovering');
+            }
+
+                // images.addEventListener('mouseout', changeDefOut);
+
+// function changeDefOver(e) {
+//   e.target.classList.toggle('opacity-toggle');
+// }
+
+// function changeDefOut(e) {
+//   e.target.classList.toggle('opacity-toggle');
+// }
+
+        </script>
+        
+    </body>
+</html>

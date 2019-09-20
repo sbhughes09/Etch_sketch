@@ -12,37 +12,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <nav>
+            <ul>
+                <button class="nav-btns"><li>CLEAR</li></button>
+                <button class="nav-btns"><li>RESIZE</li></button>
+            </ul>
+        </nav>
     <div class="container">
     </div>
-        <script>
-            const container = document.querySelector('.container');
-               
-            const boxes = (16*16);
-                for(i=0; i<boxes; i++) {
-                    const squareDiv = document.createElement('div');
-                    squareDiv.classList.add("square-box");
-                        container.appendChild(squareDiv);
-                    }
-
-            let hover = document.querySelector(".square-box");
-  
-            hover.addEventListener("mouseover", event);
-            
-            function event (e) {   
-                e.target.classList.toggle('.hovering');
-            }
-
-                // images.addEventListener('mouseout', changeDefOut);
-
-// function changeDefOver(e) {
-//   e.target.classList.toggle('opacity-toggle');
-// }
-
-// function changeDefOut(e) {
-//   e.target.classList.toggle('opacity-toggle');
-// }
-
-        </script>
-        
+       <script src="script.js"></script>
     </body>
 </html>
